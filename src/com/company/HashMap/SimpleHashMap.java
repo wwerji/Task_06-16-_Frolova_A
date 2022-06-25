@@ -1,13 +1,13 @@
 package com.company.HashMap;
 
+import com.company.HashMap.util.dummy.DefaultNotSupportedMap;
+import com.company.HashMap.util.dummy.DefaultNotSupportedSet;
+
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-
-import com.company.HashMap.util.dummy.DefaultNotSupportedMap;
-import com.company.HashMap.util.dummy.DefaultNotSupportedSet;
 
 
 /**
@@ -145,7 +145,7 @@ public class SimpleHashMap<K, V> implements DefaultNotSupportedMap<K, V> {
 
     @Override
     public Set<Map.Entry<K, V>> entrySet() {
-        return new DefaultNotSupportedSet<Entry<K, V>>() {
+        return new DefaultNotSupportedSet<Map.Entry<K, V>>() {
             @Override
             public int size() {
                 return SimpleHashMap.this.size();
