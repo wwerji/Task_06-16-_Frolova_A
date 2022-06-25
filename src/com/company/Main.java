@@ -15,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
         StringBuilder s = new StringBuilder();
-        try (FileReader reader = new FileReader("C:\\Users\\admin\\Desktop\\Task_06-16-_Frolova_A\\src\\com\\company\\text.txt")) {
+        try (FileReader reader = new FileReader("C:\\Users\\admin\\Desktop\\Task_06-16-_Frolova_A-main\\src\\com\\company\\text.txt")) {
             int i;
             while ((i = reader.read()) != -1) {
                 s.append((char) i);
